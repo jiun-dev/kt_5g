@@ -24,8 +24,40 @@ a,a:link{
 
 * {box-sizing:border-box}
 
-/*----search-----*/
+
+
+/*----header-----*/
+header {
+    position: fixed;
+    z-index: 7777;
+    width: 100%;
+    height: 12%;
+    background: white;
+}
+
+.logo {
+    position: relative;
+    float: left;
+    margin-top: 45px;
+    margin-left: 50px;
+}
+.topnav {
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    /* margin-left: 150px; */
+}
+
+.topnav li {
+    float: left;
+    width: 14%;
+    padding: 20px;
+}
+
 .search {
+    position: relative;
+    margin-top: -60px;
+    float: left;
     width: 400px;
     height: 40px;
     border: 1px solid #1b5ac2;
@@ -34,8 +66,8 @@ a,a:link{
 
 input {
     font-size: 16px;
-    width: 325px;
-    padding: 10px;
+    width: 300px;
+    padding: 7px;
     border: 0px;
     outline:none;
     float: left;
@@ -51,6 +83,151 @@ button {
     color: #ffffff;
 }
 
+
+
 input:-ms-input-placeholder {color: #a8a8a8;}
 input:-webkit-input-placeholder {color: #a8a8a8;}
 input:-moz-input-placeholder {color: #a8a8a8;}
+
+.utils {
+    float: left;
+    position: relative;
+    margin-top:-70px ;
+    margin-left: 408px;
+}
+
+.utils li {
+    float: left;
+    width: 30%;
+    margin-left:5px;
+}
+
+/*---------section---------*/
+
+section {
+    text-align: center;
+    margin-left: -100px;
+}
+
+.slide{
+    text-align: center;
+    margin-left:-550px ;
+    width: 1920px;
+    height:100%;
+    overflow:hidden;
+}
+
+.slide ul{
+    width: 1920px;
+    height:100%;
+}
+
+.slide li{
+    width: 1920px;
+    height:100%;
+}
+
+
+
+/*--------------qna--------------------*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5em
+}
+section{
+  padding: 10% 20%;
+}
+.animate{
+  transition: all .3s;
+}
+
+input[name=question]{
+    display: none;
+}
+input[name=question] + label{
+    position: relative;
+    display: block;
+    padding: 20px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background: rgba(246, 246, 246, 1);
+    color: #5a9aa8;
+    z-index: 2;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    border-radius: 3px;
+}
+
+.response{
+    position: relative;
+    background: #777777;
+    color: #777777;
+    padding: 10px 20px;
+    -webkit-transform: translate3d(0,-40px, 0) rotate(-.5deg);
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    opacity: 0;
+    border-radius: 3px;
+}
+
+input[name=question]:checked + label{
+    background: #F6F6F6;
+    color: #5a9aa8;
+}
+input[name=question]:checked + label + .response{
+    opacity: 1;
+    visibility: visible;
+    padding: 10px 20px;
+    -webkit-transform: translate3d(0, 0, 0) rotate(0deg);
+    -webkit-filter: blur(0px);
+    margin-bottom: 20px;
+    color: white;
+}
+
+.fixed-height{
+    height: 50px;
+    overflow: hidden;
+    opacity: 1 !important;
+}
+/*-----footer-------*/
+.btmnav {
+    float: left;
+    position: relative;
+    margin-top:-70px ;
+    margin-left: 408px;
+}
+
+.btmnav li {
+    float: left;
+    width: 30%;
+    margin-left:5px;
+}
+.family {
+    position: fixed;
+    float: left;
+    z-index: 9999;
+    margin-top: 25px ;
+    margin-left: 1200px;
+    border: 1px solid #e1e1e1;
+    text-align: center;
+    line-height: 26px;
+    
+}
+
+.family ul {
+    margin: 0 auto;
+    text-align: center;
+    padding: 8px 8px;
+}
+
+.submenu {
+    display: none;
+}
+
+.copy {
+    text-align: center;
+}
+
